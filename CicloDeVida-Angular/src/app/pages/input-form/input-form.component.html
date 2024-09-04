@@ -1,0 +1,11 @@
+<p>input-form works!</p>
+<form action="">
+    <label for="userInput">Enter text:</label>
+    <input id="userInput" name="userInput" [(ngModel)]="inputValue" (ngModelChange)="onInputChange($event)" />
+</form>
+
+<p>Current value: {{ inputValue }}</p>
+
+
+<a [routerLink]="['/']">Home</a>
+

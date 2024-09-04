@@ -1,0 +1,48 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$text-color: #ffffff;
+$background-color: #ecf0f1;
+$header-color: #2c3e50;
+$border-radius: 8px;
+$padding: 12px 24px;
+$font-size: 16px;
+$transition-duration: 0.3s;
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: $background-color;
+  text-align: center;
+}
+
+p {
+  font-size: 2em;
+  color: $header-color;
+  margin-bottom: 20px;
+}
+
+a {
+  display: inline-block;
+  padding: $padding;
+  margin: 10px;
+  color: $text-color;
+  background-color: $primary-color;
+  text-decoration: none;
+  border-radius: $border-radius;
+  font-size: $font-size;
+  transition: background-color $transition-duration, transform $transition-duration;
+
+  &:hover {
+    background-color: darken($primary-color, 10%);
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: 2px solid darken($primary-color, 10%);
+    outline-offset: 2px;
+  }
+}

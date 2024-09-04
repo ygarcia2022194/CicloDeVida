@@ -1,0 +1,52 @@
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background-color: #ecf0f1;
+$text-color: #2c3e50;
+$border-radius: 8px;
+$padding: 16px;
+$margin: 20px;
+$shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+$transition-duration: 0.3s;
+
+
+:host {
+  display: block;
+  max-width: 500px;
+  margin: $margin auto;
+  padding: $padding;
+  background-color: $background-color;
+  border-radius: $border-radius;
+  box-shadow: $shadow;
+  font-family: Arial, sans-serif;
+}
+
+p:first-of-type {
+  font-size: 1.5em;
+  color: $primary-color;
+  text-align: center;
+  margin-bottom: $margin;
+}
+
+
+p {
+  font-size: 1.2em;
+  color: $text-color;
+  margin: $margin 0;
+}
+
+
+a {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  background-color: $secondary-color;
+  color: white;
+  text-decoration: none;
+  border-radius: $border-radius;
+  transition: background-color $transition-duration;
+
+  &:hover {
+    background-color: darken($secondary-color, 10%);
+  }
+}

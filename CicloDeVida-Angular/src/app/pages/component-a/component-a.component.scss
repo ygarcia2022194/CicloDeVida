@@ -1,0 +1,44 @@
+$primary-color: #3498db;
+$primary-hover-color: #2980b9;
+$text-color: #ffffff;
+$border-radius: 8px;
+$padding: 12px 24px;
+$font-size: 16px;
+$transition-duration: 0.3s;
+
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+
+button {
+  background-color: $primary-color;
+  color: $text-color;
+  border: none;
+  border-radius: $border-radius;
+  padding: $padding;
+  font-size: $font-size;
+  cursor: pointer;
+  transition: background-color $transition-duration, transform $transition-duration;
+
+  &:hover {
+    background-color: $primary-hover-color;
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    outline: 2px solid darken($primary-color, 10%);
+    outline-offset: 2px;
+  }
+}
+
+p {
+    font-size: 1.5em; 
+    color: $primary-color; 
+    margin-bottom: 20px; 
+    text-align: center; 
+}
